@@ -7,6 +7,7 @@ const reviewsDirectory = path.join(process.cwd(), "content", "reviews");
 export type Review = {
   slug: string;
   title: string;
+  author: string;
   date: Date;
   content: string;
 };
@@ -27,6 +28,7 @@ export function getReviews(): Review[] {
         slug,
         title: String(data.title),
         date: new Date(data.date),
+        author: String(data.author),
         content,
       };
     })
@@ -47,6 +49,7 @@ export function getReview(slug: string): Review | null {
     slug,
     title: String(data.title),
     date: new Date(data.date),
+    author: String(data.author),
     content,
   };
 }

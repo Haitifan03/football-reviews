@@ -38,6 +38,9 @@ export default async function ReviewPage({ params }: Props) {
         <p className="text-sm text-gray-500">
           {new Date(review.date).toLocaleDateString()}
         </p>
+        <p className="text-sm text-gray-500">
+          By {review.author}
+        </p>
 
         <h1 className="mt-2 text-4xl font-bold tracking-tight">
           {review.title}

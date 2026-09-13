@@ -1,6 +1,7 @@
 ---
 title: Indiana 52 vs North Texas 16
 date: 2026-09-05
+author: Mason Holland
 
 ---
 
